@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browser" value="edge"></parameter>
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="username" value="Narendra"></parameter>
+		<parameter name="password" value="abc@123"></parameter>
+		<classes>
+			<class name="testng.ParameterAnnotation"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
